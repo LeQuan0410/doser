@@ -1,6 +1,6 @@
 # doser
 node doser.js url times threads proxy/off/proxy.txt
-#setup pc 
+# setup pc 
 pc.bat
-#setup linux
+# setup linux
 sh linux.sh
