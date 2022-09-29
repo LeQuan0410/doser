@@ -25,7 +25,7 @@ async function poptto() {
             console.log("OFF")
         } else if (process.argv[5] == 'proxy'){
             console.log("PROXY")
-            const proxyscrape = await axios.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all');
+            const proxyscrape = await axios.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt');
             var proxies = proxyscrape.data.replace(/\r/g, '').split('\n');
         } else {
             console.log("PROXY")
